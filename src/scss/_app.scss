@@ -1,0 +1,14 @@
+//global styles
+body {
+  font-family: $font-base;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}

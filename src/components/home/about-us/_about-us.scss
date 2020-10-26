@@ -1,0 +1,31 @@
+.about-us {
+  display: flex;
+
+  &__desc, &__image {
+    width: 50%;
+  }
+
+  &__desc {
+    background: $color-bg-alt;
+    padding: 180px 150px;
+  }
+
+
+  &__text {
+    @include pxToRem(font-size, 30px);
+    @include pxToRem(line-height, 54px);
+    text-align: center;
+    margin: 55px 0 40px;
+  }
+
+  &__sign {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__image {
+    background-image: url('../../../assets/People.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

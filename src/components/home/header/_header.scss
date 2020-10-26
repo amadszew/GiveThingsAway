@@ -1,0 +1,29 @@
+.home-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  max-width: 50%;
+  text-align: right;
+  padding: 40px 80px;
+  background: rgba(255,255,255,.6);
+  z-index: 100;
+
+  &__panel {
+    margin-bottom: 15px;
+
+    &__link {
+      @include pxToRem(font-size, 13px);
+      color: $color-font-alt;
+      padding: 9px 10px;
+      margin-right: 10px;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: $std-transiiton;
+
+      &:hover, &:focus {
+        border-color: $color-bg-alt;
+      }
+    }
+  }
+}

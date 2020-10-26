@@ -1,0 +1,26 @@
+.home-nav {
+  &__item {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & > a.active,
+    &:hover > a, 
+    &:focus > a {
+      border-color: $color-font-main;
+    }
+  }
+
+  &__link {
+    @include pxToRem(font-size, 18px);
+    text-transform: capitalize;
+    display: block;
+    padding: 9px 20px;
+    border: 1px solid transparent;
+    transition: $std-transiiton;
+  }
+}

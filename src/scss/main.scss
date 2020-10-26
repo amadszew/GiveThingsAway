@@ -1,14 +1,27 @@
-@import-normalize;
-
-//fonts
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+//abstract
+@import './abstracts/functions';
+@import './abstracts/mixins';
 
 //settings
-@import "./settings/fonts";
-@import "./settings/colors";
+@import './settings/fonts';
+@import './settings/colors';
+@import './settings/variables';
 
 //global styles
-body {
-  font-family: $font-base;
-}
+@import './app';
+
+//UTILS//
+@import '../utils/decorative-hr/decorative-hr';
+@import '../utils/section-header/section-header';
+
+//LAYOUTS//
+
+//Home
+@import '../components/home/home';
+@import '../components/home/header/header';
+@import '../components/home/header/nav/nav';
+@import '../components/home/main/main';
+@import '../components/home/three-columns/three-columns';
+@import '../components/home/four-steps/four-steps';
+@import '../components/home/about-us/about-us';
+@import '../components/home/whom-we-help/whom-we-help';

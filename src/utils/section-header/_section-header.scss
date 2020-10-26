@@ -1,0 +1,4 @@
+.section-header {
+  @include pxToRem(font-size, 38px);
+  text-align: center;
+}
