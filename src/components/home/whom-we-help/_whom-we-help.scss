@@ -1,5 +1,104 @@
 .whom-we-help {
   padding: 70px 0 80px;
 
-  
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  &__button {
+    @include pxToRem(font-size, 24px);
+    @include pxToRem(line-height, 24px);
+    text-align: center;
+    font-weight: $light;
+    color: $color-font-main;
+    width: 210px;
+    height: 80px;
+    background: transparent;
+    padding: 23px 42px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    cursor: pointer;
+    transition: $std-transiiton;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover, &:focus, &.active {
+      outline: none;
+      border-color: $color-font-main;
+    }
+  } 
+
+  &__desc {
+    @include pxToRem(font-size, 22px);
+    @include pxToRem(line-height, 30px);
+    text-align: center;
+    padding: 0 32%;
+    margin-top: 70px;
+  }
+
+  &__list {
+    width: 90%;
+    padding: 0 80px;
+    margin: 60px auto 0;
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__button {
+      @include pxToRem(font-size, 18px);
+      padding: 13px 15px;
+      border: 1px solid transparent;
+      margin-right: 10px;
+      background: transparent;
+      color: $color-font-main;
+      cursor: pointer;
+      transition: $std-transiiton;
+
+      &:hover, &:focus, &.active {
+        outline: none;
+        border-color: $color-hr;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-alt;
+    padding: 34px 0 30px;
+    border-bottom: 1px solid $color-font-alt;
+
+    &:nth-child(3) {
+      border-bottom: none;
+    }
+
+    &__header {
+      font-weight: $light;
+
+      &__name {
+        @include pxToRem(font-size, 26px);
+        margin-bottom: 6px;
+      }
+      
+      &__desc {
+        @include pxToRem(font-size, 18px);
+      }
+    }
+  }
+
 }
