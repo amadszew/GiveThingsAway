@@ -117,6 +117,7 @@ const WhomWeHelp = () => {
       organizations,
       locals
     }
+    
     const { currentPage, itemsPerPage } = pages;
 
     const indexOfLasttItem = currentPage * itemsPerPage;

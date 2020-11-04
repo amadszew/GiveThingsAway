@@ -68,9 +68,15 @@
     align-items: center;
     justify-content: center;
     margin-right: 40px;
+    transition: $std-transiiton;
     
     &:last-child {
       margin-right: 0;
+    }
+
+    &:hover, &:focus {
+      background: $color-font-main;
+      color: $color-bg-main;
     }
   } 
 }

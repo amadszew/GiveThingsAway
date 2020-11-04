@@ -7,6 +7,8 @@ import ThreeColumns from './three-columns/three-columns';
 import FourSteps from './four-steps/four-steps';
 import AboutUs from './about-us/about-us';
 import WhomWeHelp from './whom-we-help/whom-we-help';
+import Contact from './contact/contact';
+import Footer from './footer/footer';
 
 const Home = () => {
   return (
@@ -25,6 +27,10 @@ const Home = () => {
       <Element name="whomWeHelp">
         <WhomWeHelp />
       </Element>
+      <Element name="contact">
+        <Contact />
+      </Element>
+      <Footer />
     </div>
   );
 }
